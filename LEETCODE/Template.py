@@ -1,7 +1,7 @@
-# CTCI: 
+# Leetcode: 
 
 # Time Complexity: 
-# Space Complexity:
+# Space Complexity: 
 # Solving process:
 # Problems Encountered: 
 
