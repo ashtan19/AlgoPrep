@@ -12,12 +12,14 @@
 # return 2.
 # Note: You may assume the string contain only lowercase letters.
 
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        if len(s) == 0: return -1
+        if len(s) == 0:
+            return -1
         charMap = {}
         for index, char in enumerate(s):
-            if char in charMap: 
+            if char in charMap:
                 charMap[char][1] += 1
             else:
                 charMap[char] = [index, 1]
@@ -30,7 +32,7 @@ class Solution:
         return firstCharIndex
 
 
-#Cleanest Solution
+# Cleanest Solution
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         """
@@ -39,9 +41,9 @@ class Solution:
         """
         # build hash map : character and how often it appears
         count = collections.Counter(s)
-        
+
         # find the index
         for idx, ch in enumerate(s):
             if count[ch] == 1:
-                return idx     
+                return idx
         return -1

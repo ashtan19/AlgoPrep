@@ -1,12 +1,11 @@
 # Leetcode: Challenge Question Cousins in Binary Tree
 
 # Time Complexity: O(n)
-# Space Complexity: 
+# Space Complexity:
 # Solving process:
-# Problems Encountered: 
+# Problems Encountered:
 
 # Other Solutions:
-
 
 
 # In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1.
@@ -17,7 +16,6 @@
 
 # Return true if and only if the nodes corresponding to the values x and y are cousins.
 
- 
 
 # Example 1:
 
@@ -32,10 +30,9 @@
 # Example 3:
 
 
-
 # Input: root = [1,2,3,null,4], x = 2, y = 3
 # Output: false
- 
+
 
 # Note:
 
@@ -57,10 +54,9 @@ class Solution:
         yHeight, yParent = self.findNodeHeightandParent(root, y, 0)
         if xHeight != yHeight or xParent == yParent:
             return False
-        else: 
+        else:
             return True
-        
-     
+
     def findNodeHeightandParent(self, tree, node, height):
         if tree.left == None and tree.right == None:
             return None, None
@@ -68,15 +64,18 @@ class Solution:
             if tree.left.val == node:
                 return height + 1, tree
             else:
-                leftHeight, leftParent = self.findNodeHeightandParent(tree.left, node, height+1)
-                if leftHeight != None: return leftHeight, leftParent
-                
-        
+                leftHeight, leftParent = self.findNodeHeightandParent(
+                    tree.left, node, height+1)
+                if leftHeight != None:
+                    return leftHeight, leftParent
+
         if tree.right:
             if tree.right.val == node:
                 return height + 1, tree
             else:
-                rightHeight, rightParent = self.findNodeHeightandParent(tree.right, node, height+1)
-                if rightHeight != None: return rightHeight, rightParent
-            
+                rightHeight, rightParent = self.findNodeHeightandParent(
+                    tree.right, node, height+1)
+                if rightHeight != None:
+                    return rightHeight, rightParent
+
         return None, None

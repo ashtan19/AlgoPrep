@@ -3,7 +3,7 @@
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 # Solving process:
-# Problems Encountered: 
+# Problems Encountered:
 
 # Other Solutions:
 
@@ -15,15 +15,16 @@ class Solution:
         """
         startOfZeros = 0
         runner = 0
-        while (runner < len(nums) and nums[runner] != 0): #Get to start of zeros
+        # Get to start of zeros
+        while (runner < len(nums) and nums[runner] != 0):
             runner += 1
-            
+
         startOfZeros = runner
         runner += 1
-        
+
         while (runner <= len(nums)-1):
-            if nums[runner] != 0: #swap
+            if nums[runner] != 0:  # swap
                 nums[startOfZeros] = nums[runner]
-                nums[runner] = 0 
+                nums[runner] = 0
                 startOfZeros += 1
             runner += 1
