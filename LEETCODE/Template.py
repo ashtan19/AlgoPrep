@@ -1,8 +1,10 @@
-# Leetcode: 
+# Leetcode:
 
-# Time Complexity: 
-# Space Complexity: 
+# Time Complexity:
+# Space Complexity:
+# Acheived Ideal:
+
 # Solving process:
-# Problems Encountered: 
+# Problems Encountered:
 
 # Other Solutions:
