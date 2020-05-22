@@ -1,9 +1,10 @@
 # Leetcode:
+
 # Completed:
+# Acheived Ideal:
 
 # Time Complexity:
 # Space Complexity:
-# Acheived Ideal:
 
 # Solving process:
 # Problems Encountered:
