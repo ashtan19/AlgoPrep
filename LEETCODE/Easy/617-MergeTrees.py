@@ -7,7 +7,7 @@
 # Solving process:
 # Problems Encountered:
 
-# Other Solutions:
+# Other Solutions: Could use a stack to make it iterative
 
 # Definition for a binary tree node.
 
