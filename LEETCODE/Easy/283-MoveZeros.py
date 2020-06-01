@@ -1,5 +1,7 @@
 # Leetcode: 283 Move Zeros
 
+# Attempts: 2
+
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 # Solving process:
@@ -28,3 +30,18 @@ class Solution:
                 nums[runner] = 0
                 startOfZeros += 1
             runner += 1
+
+# Attempt 2: Did not complete.
+
+
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        lastNonZero = -1
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                lastNonZero += 1
+                nums[lastNonZero], nums[i] = nums[i], nums[lastNonZero]
