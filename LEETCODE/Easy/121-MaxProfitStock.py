@@ -1,5 +1,7 @@
 # Leetcode: 121 Best Time to Buy Stock
 
+# Attempts: 2
+
 # Time Complexity: O(n^2) - Bad, O(n)
 # Space Complexity: O(1)
 # Solving process:
@@ -28,3 +30,22 @@ def maxProfit(prices):
         profit = price - min_price
         max_profit = max(max_profit, profit)
     return max_profit
+
+# Attempt 2
+
+
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        minPrice = float('inf')
+        maxProfit = 0
+        for i in range(0, len(prices)):
+            if prices[i] < minPrice:
+                minPrice = prices[i]
+
+            elif (prices[i] - minPrice > maxProfit):
+                maxProfit = prices[i] - minPrice
+        return maxProfit
