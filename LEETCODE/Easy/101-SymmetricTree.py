@@ -1,5 +1,7 @@
 # Leetcode: 101 Symmetric Tree
 
+# Attempts: 2
+
 # Time Complexity: O(n)
 # Space Complexity: O(n)
 # Solving process:
