@@ -1,5 +1,7 @@
 # Leetcode: 543 Diameter of Binary Tree
 
+# Attempts: 2
+
 # Time Complexity: O(n)
 # Space Complexity: O(1) -> Need to double Check
 # Solving process:
@@ -27,19 +29,20 @@ class Solution:
 
         return height, maxD
 
+# Attempt 2
 
-# Leetcode Solution:
+
 class Solution(object):
     def diameterOfBinaryTree(self, root):
-        self.ans = 1
+        self.result = 0
+        self.depthofnode(root)
+        return self.result
 
-        def depth(node):
-            if not node:
-                return 0
-            L = depth(node.left)
-            R = depth(node.right)
-            self.ans = max(self.ans, L+R+1)
-            return max(L, R) + 1
-
-        depth(root)
-        return self.ans - 1
+    def depthofnode(self, node):
+        if node:
+            left = self.depthofnode(node.left)
+            right = self.depthofnode(node.right)
+            self.result = max(self.result, left + right)
+            return max(left, right) + 1
+        else:
+            return 0
