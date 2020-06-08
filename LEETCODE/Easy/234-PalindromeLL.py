@@ -1,5 +1,7 @@
 # Leetcode: 234 Palindrome LL
 
+# Attempts: 2
+
 # Time Complexity: O(n)
 # Space Complexity: O(n) O(1)
 # Solving process:
@@ -32,8 +34,33 @@ class Solution(object):
 
         return True
 
+# Attempt 2
+
+
+class Solution(object):
+    def isPalindrome(self, head):
+        fast = head
+        slow = head
+        while fast != None and fast.next != None:
+            tmp = slow
+            slow = slow.next
+            fast = fast.next.next
+            tmp.next = head
+            head = tmp
+
+        if fast:
+            slow = slow.next
+        while slow:
+            if slow.val != head.val:
+                return False
+            slow = slow.next
+            head = head.next
+
+        return True
 
 # Two Pointer
+
+
 def isPalindrome(self, head):
     fast = slow = head
     # find the mid node
