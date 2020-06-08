@@ -2,15 +2,15 @@
 
 # Attempts: 1
 # Completed: Y
-# Acheived Ideal:
+# Acheived Ideal: N
 
-# Time Complexity:
+# Time Complexity: n^2
 # Space Complexity:
 
 # Solving process:
 # Problems Encountered:
 
-# Other Solutions:
+# Other Solutions: Static DP
 
 
 class Solution(object):
