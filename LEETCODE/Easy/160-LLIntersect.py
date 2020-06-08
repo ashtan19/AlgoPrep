@@ -34,24 +34,20 @@ class Solution(object):
         return None
 
 
-# Two Pointer Solution
-class Solution:
-    # @param two ListNodes
-    # @return the intersected ListNode
-    def getIntersectionNode(self, headA, headB):
-        if headA is None or headB is None:
+class Solution(object):
+    def getIntersectionNode(self, head1, head2):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        if head1 == None or head2 == None:
             return None
+        p1, p2 = head1, head2
+        while p1 != p2:
+            p1 = head2 if p1 is None else p1.next
+            p2 = head1 if p2 is None else p2.next
 
-        pa = headA  # 2 pointers
-        pb = headB
-
-        while pa is not pb:
-            # if either pointer hits the end, switch head and continue the second traversal,
-            # if not hit the end, just move on to next
-            pa = headB if pa is None else pa.next
-            pb = headA if pb is None else pb.next
-
-        return pa  # only 2 ways to get out of the loop, they meet or the both hit the end=None
+        return p1
 
 # the idea is if you switch head, the possible difference between length would be countered.
 # On the second traversal, they either hit or miss.
