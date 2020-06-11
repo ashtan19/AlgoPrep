@@ -37,7 +37,7 @@
 # [output] string
 
 
-# Attempt 1
+# Attempt 1 O(n) O(1)
 def decrypt(word):
     if word == '' or word == None:
         return ''
