@@ -1,3 +1,7 @@
+# Time Complexity: O(N)
+# Space Complexity: O(1)
+
+
 def max_sub_array_of_size_k(k, arr):
     # TODO: Write your code here
     maxSum = -float('inf')
