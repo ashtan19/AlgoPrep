@@ -1,4 +1,11 @@
-# Time Complexity: O(n)
-# Space Complexity: O(n)
+'''
+Question: 
 
-# Technique: Sliding Variable Window
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Pattern: Two Pointer
+Technique: 
+
+
+'''
