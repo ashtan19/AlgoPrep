@@ -1,5 +1,5 @@
 # Time Complexity: O(n)
-# Space Complexity: O(n)
+# Space Complexity: O(k)
 
 # Technique: Sliding Variable Window
 
