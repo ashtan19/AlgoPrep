@@ -51,6 +51,6 @@ def length_of_longest_substring(str1, k):
             frequency_map[left_char] -= 1
             window_start += 1
 
-        max_length = max(max_repeat_letter_count,
+        max_length = max(max_length,
                          window_end - window_start + 1)
     return max_length
