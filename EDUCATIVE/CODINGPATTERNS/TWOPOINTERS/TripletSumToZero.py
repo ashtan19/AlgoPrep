@@ -1,8 +1,8 @@
 '''
 Question: Triplet Sum to Zero (medium)
 
-Time Complexity: O(n)
-Space Complexity: O(1)
+Time Complexity: O(n^2)
+Space Complexity: O(n)
 
 Pattern: Two Pointer
 Technique: Three Pointers. Sort array. Iterate through array from front to back. Use Pair With Target Sum to find
