@@ -1,8 +1,8 @@
 '''
 Question: 
 
-Time Complexity: O(n)
-Space Complexity: O(1)
+Time Complexity: O(nlogn)
+Space Complexity: O(n)
 
 Pattern: Merge Intervals 
 Technique: Sort Intervals then merge
