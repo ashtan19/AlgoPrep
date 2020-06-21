@@ -1,8 +1,8 @@
 '''
 Question: Conflicting Appointments (medium)
 
-Time Complexity: O(n)
-Space Complexity: O(1)
+Time Complexity: O(nlogn)
+Space Complexity: O(n)
 
 Pattern: Merge Intervals 
 Technique: Sort Intervals by start, Check if start is before previous end
