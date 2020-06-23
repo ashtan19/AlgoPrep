@@ -9,6 +9,13 @@ Technique: Difference is that you appendLeft to the result
 
 
 '''
+from collections import deque
+
+
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
 
 
 def traverse(root):
