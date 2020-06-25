@@ -2,7 +2,7 @@
 Question: Binary Tree Path Sum (easy)
 
 Time Complexity: O(n)
-Space Complexity: O(h)
+Space Complexity: O(n) -> if Tree is a LL
 
 Pattern: DFS
 Technique: 
