@@ -1,7 +1,7 @@
 '''
 Question: All Paths for a Sum (medium)
 
-Time Complexity: O(n)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 
 Pattern: DFS
