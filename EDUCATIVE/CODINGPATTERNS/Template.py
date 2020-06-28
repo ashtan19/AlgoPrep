@@ -7,6 +7,4 @@ Space Complexity: O(1)
 Pattern: Two Pointer
 Technique: 
 
-Test Test
-
 '''
