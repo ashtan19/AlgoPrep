@@ -1,7 +1,7 @@
 """
 Question: Order-agnostic Binary Search (easy)
 
-Time Complexity: O(n)
+Time Complexity: O(logn)
 Space Complexity: O(1)
 
 Pattern: Binary Search
