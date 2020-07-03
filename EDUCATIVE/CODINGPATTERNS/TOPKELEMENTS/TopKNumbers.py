@@ -2,7 +2,7 @@
 Question: Top 'K' Numbers (easy)
 
 Time Complexity: O(n)
-Space Complexity: O(1)
+Space Complexity: O(k)
 
 Pattern: Top K Elements 
 Technique: First add k elements into the heap. Then when we encounter a new element that is larger than
