@@ -2,7 +2,7 @@
 Question: Kth Largest Number in a Stream (medium)
 
 Time Complexity: O(nlogk)
-Space Complexity: O(n)
+Space Complexity: O(k)
 
 Pattern: Top K Elements 
 Technique: Same 
