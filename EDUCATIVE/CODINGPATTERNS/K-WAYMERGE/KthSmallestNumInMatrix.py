@@ -1,10 +1,10 @@
 """
 Question: Kth Smallest Number in a Sorted Matrix (Hard)
 
-Time Complexity: O(klogk)
-Space Complexity: O(k)
+Time Complexity: O(klogn)
+Space Complexity: O(n)
 
-Pattern: Two Pointer
+Pattern: K Way Merge
 Technique: 
 
 """
