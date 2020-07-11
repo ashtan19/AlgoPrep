@@ -26,19 +26,20 @@ class Node:
         self.random = random
 """
 
+
 class Solution(object):
     def copyRandomList(self, head):
         """
         :type head: Node
         :rtype: Node
         """
-        if head == None: 
-            return None 
+        if head == None:
+            return None
         current = head
-        copyHead,copyCurrent = None, None
+        copyHead, copyCurrent = None, None
         newRefTable = {None: None}
-        
-        # Create the LL copy without randoms 
+
+        # Create the LL copy without randoms
         while current:
             copyNode = Node(current.val)
             newRefTable[current] = copyNode
@@ -46,27 +47,18 @@ class Solution(object):
                 copyHead, copyCurrent = copyNode, copyNode
             else:
                 copyCurrent.next = copyNode
-                copyCurrent = copyCurrent.next 
-            
+                copyCurrent = copyCurrent.next
+
             current = current.next
-            
-        current = head 
-        
+
+        current = head
+
+        # Add the random pointers
         while current:
             copiedNode = newRefTable[current]
             copiedNodeRandom = newRefTable[current.random]
             copiedNode.random = copiedNodeRandom
             current = current.next
-        
+
         return copyHead
-        
-        
-        
-        
-        
-        
-        
-        
-                
-        
-        
+
