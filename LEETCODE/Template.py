@@ -1,13 +1,18 @@
-# Leetcode:
+"""
+Leetcode:
 
-# Attempts:
-# Completed:
-# Acheived Ideal:
+Attempts:
+Completed:
+Acheived Ideal:
 
-# Time Complexity:
-# Space Complexity:
+Time Complexity:
+Space Complexity:
 
-# Solving process:
-# Problems Encountered:
+Pattern: 
+Technique: 
 
-# Other Solutions:
+Problems Encountered:
+Other Solutions:
+
+"""
+
