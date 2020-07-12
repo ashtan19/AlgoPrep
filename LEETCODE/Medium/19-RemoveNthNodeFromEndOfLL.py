@@ -12,7 +12,7 @@ Pattern: Two Pointer
 Technique: Have a counter that increments, when counter reaches, start a new pointer that will iterate - return that pointer
 
 Problems Encountered: Missed the edge case where you are deleting the first node - there is no node before first node
-Other Solutions:
+Other Solutions: Could also have a dummy head that you put in front of head - dont have to take care of edgecase but extra space
 
 """
 
