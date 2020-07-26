@@ -14,6 +14,5 @@ Technique:
 Problems Encountered:
 Other Solutions:
 
-Test Test Test 
 """
 
