@@ -2,7 +2,7 @@
 Question: Subset Sum
 
 Time Complexity: O(n * S)
-Space Complexity: O(n * S)
+Space Complexity: O(n * S) => can optimize to have only a single array instead of Matrix O(S)
 
 Pattern: DP 0/1 Knapsack
 Technique: Use a T/F matrix. Could include early termination of you reach sum and it is true
