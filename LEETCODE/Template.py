@@ -4,6 +4,7 @@ Leetcode:
 Attempts:
 Completed:
 Acheived Ideal:
+Under 30 Mins: 
 
 Time Complexity:
 Space Complexity:
@@ -15,4 +16,3 @@ Problems Encountered:
 Other Solutions:
 
 """
-
