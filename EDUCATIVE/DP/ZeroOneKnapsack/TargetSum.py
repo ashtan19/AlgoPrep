@@ -5,7 +5,7 @@ Time Complexity: O(n * Sum)
 Space Complexity: O(Sum)
 
 Pattern: DP 0/1 Knapsack
-Technique: 
+Technique: test test
 
 '''
 
