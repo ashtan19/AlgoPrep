@@ -15,7 +15,7 @@ input = [
     '510,Load,10000,2019-05-18 02:33:00',
     '361,Creation,120000,2019-05-18 06:30:00',
     '361,Load,50000,2019-05-18 06:31:00',
-    '7,Creation,120000,2019-05-18 09:30:00'
+    '7,Creation,120000,2019-05-18 09:30:00',
     '8888,Creation,50000,2019-05-18 15:30:00',
     '8888,Load,50000,2019-05-18 15:35:00',
     '10,Creation,10000,2019-05-18 14:29:00',
@@ -26,10 +26,11 @@ input = [
 
 transactionTable = {}
 
+returnsList = []
+
 # Filtering transactions based on user card
 for transaction in input:
     transactionSplit = transaction.split(",")
-    print(transactionSplit[0])
     userRecord = transactionTable.setdefault(
         transactionSplit[0], []).append(transactionSplit)
 
@@ -41,7 +42,42 @@ for user in transactionTable.keys():
     userTransactions.sort(key=lambda userTransactions: userTransactions[3])
     transactionTable[user] = userTransactions
 
-    purchase
+    hasPurchased = False
+    initialLoan, curLoanValue, userLoadValue, purchaseValue, returnValue = 0, 0, 0, 0, 0
+
+    for transaction in userTransactions:
+        print(transaction)
+        cardNum, action, amount, time = transaction
+        amount = int(amount)
+
+        if action == "Creation":
+            initialLoan = amount
+            curLoanValue = amount
+        elif action == "Purchase":
+            purchaseValue = amount
+            hasPurchased = True
+            if curLoanValue <= purchaseValue:
+                purchaseValue -= curLoanValue
+                curLoanValue = 0
+                userLoadValue -= purchaseValue
+            else:
+                curLoanValue -= purchaseValue
+        elif action == "Load":
+            if hasPurchased == False:
+                userLoadValue += amount
+            else:
+                returnValue += amount
+                if amount >= initialLoan-curLoanValue:
+                    remainder = amount - (initialLoan - curLoanValue)
+                    curLoanValue = initialLoan
+                    userLoadValue += remainder
+                else:
+                    curLoanValue += amount
+
+    if hasPurchased == True and userLoadValue > 0:
+        returnsList.append(user + "**" + str(userLoadValue))
 
 
 print(transactionTable['510'])
+
+print(returnsList)
