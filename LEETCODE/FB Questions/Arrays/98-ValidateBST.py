@@ -41,3 +41,28 @@ class Solution(object):
         left, right = -float("inf"), float("inf")
 
         return isBST(root, left, right)
+
+
+# Stack solution but not as intuitive
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+
+        stack = []
+        left_child = -float("inf")
+
+        while stack != [] or root:
+            while root:
+                stack.append(root)
+                root = root.left
+
+            root = stack.pop()
+            if root.val <= left_child:
+                return False
+            left_child = root.val
+            root = root.right
+
+        return True
