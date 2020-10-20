@@ -13,7 +13,7 @@ Pattern: Matrix
 Technique: Transpose and reverse
 
 Problems Encountered:
-Other Solutions: Can do in one pass instead of two 
+Other Solutions: Can do in one pass instead of two. see below
 
 """
 
