@@ -1,3 +1,22 @@
+/*
+Leetcode: Amazon OA packaging automation
+
+Attempts:1
+Completed: Y
+Acheived Ideal: Y
+Under 30 Mins: N
+
+Time Complexity: O(nlogn)
+Space Complexity: O(1)
+
+Pattern: Array Traversal
+Technique: Sort then check if out of bounds
+
+Problems Encountered:
+Other Solutions: there may be a O(n) solution
+
+*/
+
 import java.util.Arrays;
 
 // import java.util.ArrayList;
