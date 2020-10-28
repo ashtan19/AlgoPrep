@@ -40,7 +40,7 @@ def fetchItemsToDisplay(items, sortParam, sortOrder, itemsPerPage, pageNum):
 
 # If Item value is array, test_items = {"item1": [10, 15], "item2": [3, 4], "item3": [17, 8]}
 test_items = {"item1": (10, 15), "item2": (3, 4), "item3": (17, 8)}
-print(fetchItemsToDisplay(test_items, 0, 0, 3, 1))
+print(fetchItemsToDisplay(test_items, 2, 0, 3, 1))
 
 # # Creating sorted item name list based on sort param
 # if sortParam == 0:
