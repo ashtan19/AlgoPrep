@@ -26,6 +26,7 @@ class DisjointSet:
     def __init__(self, vertices):
         # vertices is any iterable (elements need to be hashable)
         self.adj = {v: v for v in vertices}
+        print(self.adj)
 
     def __repr__(self):
         return str(self.adj)
