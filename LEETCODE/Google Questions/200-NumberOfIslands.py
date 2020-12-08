@@ -24,7 +24,8 @@ Idea:
 - When you encounter a 1, add it's neighbours to a queue if they are 1's 
 - Flip the 1 to a # 
 - Go through the queue to mark all the 1's that are connected 
-- increment result by 1
+- increment result by 1 
+- good to go 
 
 '''
 
