@@ -13,7 +13,7 @@ Pattern:
 Technique: 
 
 Problems Encountered:
-Other Solutions:
+Other Solutions: Update
 
 """
 
