@@ -13,7 +13,7 @@ Pattern: Combinatorics
 Technique: FInd the patterns in the vowel strings
 
 Problems Encountered:
-Other Solutions: There is a cleaner math solution 
+Other Solutions: There is a cleaner math solution, Can also use DP
 
 """
 
