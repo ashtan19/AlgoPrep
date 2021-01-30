@@ -13,7 +13,7 @@ Pattern: BTree Traversal
 Technique: DFS or BFS. DFS better b/c of better space
 
 Problems Encountered:
-Other Solutions:
+Other Solutions: DFS solution 
 
 """
 
